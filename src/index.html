@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sicredi</title>
+  </head>
+  <body>
+    <header class="container">
+      <nav class="headerContainer">
+        <div class="headerUser">
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Acessar conta com
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li>
+                <a
+                  id="cpfItem"
+                  class="dropdown-item"
+                  href="#"
+                  onclick="changeToCPF()"
+                  >CPF</a
+                >
+              </li>
+              <li>
+                <a
+                  id="cnpjItem"
+                  class="dropdown-item"
+                  href="#"
+                  onclick="changeToCNPJ()"
+                  >CNPJ</a
+                >
+              </li>
+            </ul>
+          </div>
+          <form action="">
+            <input type="text" placeholder="CNPJ" name="idUser" />
+            <button type="submit" name="buttonSubmit">
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </form>
+          <a href="#">Abra sua conta</a>
+        </div>
+        <div class="headerMenu">
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          <button
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                <i class="fa-solid fa-x"></i>
+              </button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Acesso Rápido
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li><a href="#">Localizar Agência</a></li>
+                        <li><a href="#">Fale Conosco</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">2° via de boleto</a></li>
+                        <li><a href="#">Atendimento</a></li>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Para Você
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li><a href="#">Localizar Agência</a></li>
+                        <li><a href="#">Fale Conosco</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">2° via de boleto</a></li>
+                        <li><a href="#">Atendimento</a></li>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Para sua Empresa
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li><a href="#">Localizar Agência</a></li>
+                        <li><a href="#">Fale Conosco</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">2° via de boleto</a></li>
+                        <li><a href="#">Atendimento</a></li>
+                        <li><a href="#">Trabalhe Conosco</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="mainContainer">
+        <div class="contentContainer">
+          <h1>
+            Nós temos as melhores oportunidades <strong>para você</strong>
+          </h1>
+          <p>
+            Somos o parceiro ideal para te acompanhar e ajudar em todas as suas
+            conquistas. De forma responsásvel e transparente, nós vamos, juntos,
+            organizar a sua vida financeira.
+          </p>
+        </div>
+        <div class="banerContainer">
+          <img src="../public/images/baner.jpg" alt="baner" />
+        </div>
+        <div class="listContainer">
+          <ul>
+            <li>
+              <strong>Para você</strong>
+            </li>
+            <li><a href="#">Conta corrente</a></li>
+            <li><a href="#">Cartões</a></li>
+            <li><a href="#" class="active">Pix</a></li>
+            <li><a href="#">Consórcios</a></li>
+            <li><a href="#">Crédito</a></li>
+            <li><a href="#">Investimentos</a></li>
+            <li><a href="#">Pagamentos</a></li>
+            <li><a href="#">Previdência</a></li>
+            <li><a href="#">Máquina de Cartões</a></li>
+            <li><a href="#">Seguros</a></li>
+            <li><a href="#">Câmbio</a></li>
+            <li><a href="#">Certificado Digital</a></li>
+            <li><a href="#">Momentos</a></li>
+          </ul>
+        </div>
+        <div
+          class="sloganContainer"
+          style="position: absolute; right: 9rem; bottom: 0; text-align: right"
+        >
+          <p>Para sua Empresa</p>
+          <p>Para seu Agronegócio</p>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/87e61fce13.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/index.js" type="text/javascript"></script>
+  </body>
+</html>
