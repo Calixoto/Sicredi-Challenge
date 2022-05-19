@@ -21,13 +21,13 @@ $ cd Sicredi-Challenge
 
 # :art: Layout
 
-![alt text](https://github.com/Calixoto/Sicredi-Challenge/blob/master/screenn/1.png "Screenshot 1")
+![alt text](https://github.com/Calixoto/Sicredi-Challenge/blob/main/screenn/1.png "Screenshot 1")
 
 <br>
 <br>
 
-![alt text](https://github.com/Calixoto/Sicredi-Challenge/blob/master/screen/2.png "Screenshot 1")
+![alt text](https://github.com/Calixoto/Sicredi-Challenge/blob/main/screen/2.png "Screenshot 1")
 <br>
 <br>
 
-![alt text](https://github.com/Calixoto/Sicredi-Challenge/blob/master/screen/3.png "Screenshot 1")
+![alt text](https://github.com/Calixoto/Sicredi-Challenge/blob/main/screen/3.png "Screenshot 1")
